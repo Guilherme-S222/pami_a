@@ -1,11 +1,21 @@
-import {View, Text } from 'react-native';
+import { Text, View , TouchableOpacity } from 'react-native';
 
-import styles from './style';
+import styles from './styles';
 
 export default function apostila03() {
-    return(
-        <View style={styles.container} >
-            <Text>  Exemplo 3  </Text>
-        </View>
-    );
-};
+  return (
+    <View style={styles.container}>
+      <Text style={styles.paragraph}>Exemplo apostila 3</Text>
+
+      <TouchableOpacity 
+        style={styles.button}
+        onPress={ () => alert('BATERIA FRACA')}
+      >
+        <Text style={styles.textButton}>Hello World!!</Text>
+      </TouchableOpacity>
+    
+    </View>
+
+  );
+}
+
