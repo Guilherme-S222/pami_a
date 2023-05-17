@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Text, View , TouchableOpacity } from 'react-native';
+import Botao from './botao';
 import styles from './styles';
 
 export default function apostila03() {
@@ -21,25 +22,15 @@ export default function apostila03() {
     <View style={styles.container}>
       <Text style={styles.textCounter}>Contador</Text>
       
-      <View>
-        <TouchableOpacity 
-          style={styles.buttonact}
-          onPress={ () => subNumber()}
-        >
-        <Text style={styles.textButton}>-</Text>
-        </TouchableOpacity>
+      <View style={styles.buttonRow}>
+        <Botao sinal={'-'} funcao = {subNumber} />
         
-        <Text style={styles.textCounter}>{contador}</Text>
+        <Text style={styles.numcont}>{contador}</Text>
 
-        <TouchableOpacity 
-          style={styles.buttonact}
-          onPress={ () => addNumber()}
-        >
-        <Text style={styles.textButton}>+</Text>
-        </TouchableOpacity>
+        <Botao sinal={'+'} funcao = {addNumber} />
       </View>
       
-      <View>
+      <View style={styles.buttonCol}>
         <TouchableOpacity 
           style={styles.button}
           onPress={ () => zerarNumber()}
