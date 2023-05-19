@@ -5,20 +5,13 @@ const styles = StyleSheet.create({
     flex: 1, 
     justifyContent: 'center', 
     backgroundColor: '#F5F5F5', 
-    padding: 50, 
+    padding: 20, 
   },  
   button: {
-    margin: 10,
-    padding: 5,
+    margin: 30,
+    padding: 10,
     backgroundColor: '#9E9E9E', 
-    height: 80, 
-    justifyContent: 'center', 
-  }, 
-  buttonact: {
-    margin: 5,
-    padding: 5,
-    backgroundColor: '#9E9E9E', 
-    height: 70, 
+    height: 90, 
     justifyContent: 'center', 
   }, 
   textButton: {
@@ -27,7 +20,8 @@ const styles = StyleSheet.create({
     fontSize: 40, 
     color: 'black', 
     textAlign: 'center',
-    margin: 5, 
+    margin: 0, 
+    padding: 10,
   }, 
   counter: {
     borderWidth: 4, 
@@ -41,7 +35,7 @@ const styles = StyleSheet.create({
     color: '#15a', 
     textAlign: 'center',    
     fontWeight: 'bold', 
-    padding: 8, 
+    padding: 5, 
   },
   buttonRow: {
     flex: 1,
@@ -50,7 +44,6 @@ const styles = StyleSheet.create({
     padding: 10,
     alignItems: 'center',
     justifyContent: 'center',
-    
   },
   buttonCol: {
     flex: 1,
