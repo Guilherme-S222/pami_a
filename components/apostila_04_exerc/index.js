@@ -8,12 +8,11 @@ function Apostila04_exerc() {
       const [entrada1, setEntrada1] = useState ('');
       const [entrada2, setEntrada2] = useState ('');
       const [mensagem, setMensagem] = useState ('Inserir nome e sobrenome!');    
-      const [nome, setNome] = useState ('Nome:');
-      const [sobrenome, setSobrenome] = useState ('Sobrenome:');
+      const [nome] = useState ('Nome:');
+      const [sobrenome] = useState ('Sobrenome:');
 
       function apresentaMensagem(){
             setMensagem(entrada1 +' '+ entrada2);
-            
       }
 
       return(
@@ -66,9 +65,7 @@ function Apostila04_exerc() {
                               Exibir texto
                   </Text>
                   </TouchableOpacity>
-
             </View>
-            
       );
 }
 export default Apostila04_exerc;
