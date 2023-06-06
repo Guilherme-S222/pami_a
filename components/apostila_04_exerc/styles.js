@@ -13,12 +13,18 @@ const styles = StyleSheet.create({
             color: '#b71c1c',
       },
       txtSaida: {
-            margin: 24, 
+            margin: 20, 
             fontSize: 22, 
             fontWeight: 'bold', 
             textAlign: 'center', 
             color: '#E53935',     
-        }, 
+        },
+        txtCampo: {
+           alignSelf: 'flex-start',
+           marginLeft: 60, 
+           fontSize: 20, 
+           color: '#E53935',   
+        },  
       txtEntrada: {
             borderWidth: 4, 
             textAlign: 'center', 

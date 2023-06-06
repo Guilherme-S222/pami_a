@@ -3,14 +3,17 @@ import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 
 import styles from './styles'
 
-function Apostila04() {
+function Apostila04_exerc() {
       
-      const [entrada, setEntrada] = useState ('');
-      const [mensagem, setMensagem] = useState ('Aqui aparece o texto digitado!');
+      const [entrada1, setEntrada1] = useState ('');
+      const [entrada2, setEntrada2] = useState ('');
+      const [mensagem, setMensagem] = useState ('Inserir nome e sobrenome!');    
+      const [nome, setNome] = useState ('Nome:');
+      const [sobrenome, setSobrenome] = useState ('Sobrenome:');
 
       function apresentaMensagem(){
-            setMensagem(entrada);
-            setEntrada('');
+            setMensagem(entrada1 +' '+ entrada2);
+            
       }
 
       return(
@@ -19,7 +22,7 @@ function Apostila04() {
                   <Text 
                         style={styles.texto}
                         >
-                              Exemplo 4
+                              Exercício 4
                   </Text> 
 
                   <Text 
@@ -28,10 +31,28 @@ function Apostila04() {
                               {mensagem}
                   </Text> 
 
+                  <Text 
+                        style={styles.txtCampo}
+                        >
+                              {nome}
+                  </Text> 
+
                   <TextInput 
                         style={styles.txtEntrada}
-                        onChangeText={(e) => setEntrada(e)}
-                        value={entrada}   
+                        onChangeText={(e) => setEntrada1(e)}
+                        value={entrada1}   
+                  />
+
+                  <Text 
+                        style={styles.txtCampo}
+                        >
+                              {sobrenome}
+                  </Text>
+
+                  <TextInput 
+                        style={styles.txtEntrada}
+                        onChangeText={(e) => setEntrada2(e)}
+                        value={entrada2}   
                   />
 
                   <TouchableOpacity 
@@ -42,7 +63,7 @@ function Apostila04() {
                   <Text 
                         style={styles.textButton}
                         >
-                              Mostrar valor digitado
+                              Exibir texto
                   </Text>
                   </TouchableOpacity>
 
@@ -50,4 +71,4 @@ function Apostila04() {
             
       );
 }
-export default Apostila04;
+export default Apostila04_exerc;
