@@ -10,7 +10,20 @@ function Apostila05(){
       const [total, setTotal] = useState (0);
 
       function Soma(){
-            setTotal(parseInt(n1) + parseInt(n2));
+            const conta = parseInt(n1) + parseInt(n2);
+            setTotal(conta.toString());
+      }
+      function Sub(){
+            const conta = parseInt(n1) - parseInt(n2);
+            setTotal(conta.toString());
+      }
+      function Div(){
+            const conta = parseInt(n1) / parseInt(n2);
+            setTotal(conta.toString());
+      }
+      function Multi(){
+            const conta = parseInt(n1) * parseInt(n2);
+            setTotal(conta.toString());
       }
 
       return(
@@ -27,7 +40,7 @@ function Apostila05(){
                         >
                   </TextInput>
 
-                  <Text style={styles.txtSaida}>+</Text>
+                  <Text style={styles.txtSaida}>(+) (-) (/) (*)</Text>
 
                   <Text style={styles.textLabel}>2º número</Text>
                   <TextInput 
@@ -47,10 +60,21 @@ function Apostila05(){
                   >
                   </TextInput>
 
+                  <View style={styles.buttonContainer}>
                   <TouchableOpacity style={styles.button} onPress={() => Soma()}>
-                        <Text style={styles.textButton}>+</Text>
+                  <Text style={styles.textButton}>+</Text>
                   </TouchableOpacity>
-           
+                  <TouchableOpacity style={styles.button} onPress={() => Sub()}>
+                  <Text style={styles.textButton}>-</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity style={styles.button} onPress={() => Div()}>
+                  <Text style={styles.textButton}>/</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity style={styles.button} onPress={() => Multi()}>
+                  <Text style={styles.textButton}>*</Text>
+                  </TouchableOpacity>
+                  </View>
+
             </View>
       )
 };
