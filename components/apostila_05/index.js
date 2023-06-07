@@ -25,6 +25,12 @@ function Apostila05(){
             const conta = parseInt(n1) * parseInt(n2);
             setTotal(conta.toString());
       }
+      function zerarCampos() {
+            setN1('0');
+            setN2('0');
+            setTotal('0');
+      }
+          
 
       return(
             <View style={styles.container}>
@@ -72,6 +78,11 @@ function Apostila05(){
                   </TouchableOpacity>
                   <TouchableOpacity style={styles.button} onPress={() => Multi()}>
                   <Text style={styles.textButton}>*</Text>
+                  </TouchableOpacity>
+                  </View>
+                  <View style={styles.buttonContainer}>
+                  <TouchableOpacity style={styles.buttonZerar} onPress={() => zerarCampos()}>
+                  <Text style={styles.textButton}>Zerar</Text>
                   </TouchableOpacity>
                   </View>
 
