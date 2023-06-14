@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { View , Text , TextInput , TouchableOpacity , StyleSheet } from 'react-native';
 
 import styles from './styles'
 
@@ -26,9 +26,9 @@ function Apostila05(){
             setTotal(conta.toString());
       }
       function zerarCampos() {
-            setN1('0');
-            setN2('0');
-            setTotal('0');
+            setN1(0);
+            setN2(0);
+            setTotal(0);
       }
           
 
