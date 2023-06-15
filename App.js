@@ -14,7 +14,7 @@ let corApp = '#000';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Apostila05 />
+      <Apostila04_exerc />
       <StatusBar style= {corApp === '#000' ? "light" : "dark"} />
     </View>
   );
