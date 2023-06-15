@@ -16,16 +16,16 @@ function Apostila06() {
       if (resultado < 18.5) {
         return 'Abaixo do peso!';
       }
-      if (resultado > 18.5 && resultado < 24.9) {
+      if (resultado > 18.5 && resultado < 24.99) {
         return 'Peso normal!';
       }
-      if (resultado > 25 && resultado < 29.9) {
+      if (resultado > 25 && resultado < 29.99) {
         return 'Sobrepeso!';
       }
-      if (resultado > 30 && resultado < 34.9) {
+      if (resultado > 30 && resultado < 34.99) {
         return 'Obesidade grau 1!';
       }
-      if (resultado > 35 && resultado < 39.9) {
+      if (resultado > 35 && resultado < 39.99) {
         return 'Obesidade grau 2!';
       }
       if (resultado > 40) {

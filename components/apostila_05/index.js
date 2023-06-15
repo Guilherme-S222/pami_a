@@ -43,6 +43,7 @@ function Apostila05(){
                         style={styles.txtEntrada}
                         onChangeText={(entrada)=> setN1(entrada)}
                         value={n1}
+                        keyboardType='numeric'
                         >
                   </TextInput>
 
@@ -53,6 +54,7 @@ function Apostila05(){
                         style={styles.txtEntrada}
                         onChangeText={(entrada)=> setN2(entrada)}
                         value={n2}
+                        keyboardType='numeric'
                   >
                   </TextInput>
 
